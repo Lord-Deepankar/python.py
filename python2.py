@@ -1,5 +1,5 @@
 list1 = []
-for i in range (15):
+for i in range (5):
     list1.append(i)
 print(list1)
 n = len(list1)
