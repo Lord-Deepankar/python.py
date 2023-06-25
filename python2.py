@@ -1,13 +1,16 @@
-list1 = []
-for i in range (15):
-    list1.append(i)
-print(list1)
-n = len(list1)
-target = int(input('enter digit btwn 1-10 to find in the list...'))
-for i in range (n):
-    if target == list1[i]:
-        print("index value of target is...", i)    
-    else:
-        pass
+def hcf(x,y):
+    factors = []
+    i = 1
+    while (i<=x and i<=y):
+        if (x%i==0 and y%i==0):
+            factors.append(i)
+        i = i+1
+    print(factors)
+    factors.sort(reverse=True)
+    return factors[0]
 
-
+#main function
+z = int(input("enter num..."))
+p = int(input("enter num..."))
+print(z , p , sep="&")
+print("hcf of number is...",hcf(z,p))
